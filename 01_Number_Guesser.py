@@ -19,15 +19,15 @@ print("you will be guessing a number between", ll, "and", ul, "\n")
 
 # Logic building
 
-for i in range(1, 11):
+for i in range(10):
     guess = int(input("Enter your guess\n"))
     if guess == x:
         print("Congratulations! You guessed the number correctly!\n")
-        print("Your guess number = ", i)
+        print("Your guess number = ", i+1)
         break
-    elif guess > x and guess <= ul and guess >= ll:
+    elif guess > x and guess <= ul:
         print("You guessed a little too high!\n")
-    elif guess < x and guess <= ul and guess >= ll:
+    elif guess < x and guess >= ll:
         print("you guessed a little too low!\n")
     else:
         print("Please stick to the game parameters of the game\n")
